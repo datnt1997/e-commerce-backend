@@ -1,6 +1,6 @@
 "use strict";
 
-const { model, Schema, Types } = require("mongoose");
+const { model, Schema } = require("mongoose");
 
 const DOCUMENT_NAME = "Shop";
 const COLLECTION_NAME = "Shops";
@@ -43,4 +43,4 @@ var shopSchema = new Schema(
 );
 
 //Export the model
-module.exports = mongoose.model(DOCUMENT_NAME, userSchema);
+module.exports = model(DOCUMENT_NAME, shopSchema);
